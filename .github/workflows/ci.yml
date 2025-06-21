@@ -36,6 +36,7 @@ jobs:
         pip install -r user_service/requirements.txt
 
     - name: Run tests
+      env:
+        PYTHONPATH: ${{ github.workspace }}
       run: |
-          export PYTHONPATH="${{ github.workspace }}/../user_service"
-          pytest
+        pytest user_service/tests
