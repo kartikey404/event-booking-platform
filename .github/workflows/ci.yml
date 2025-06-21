@@ -37,5 +37,5 @@ jobs:
 
     - name: Run tests
       run: |
-          export PYTHONPATH="${{ github.workspace }}/user_service"
-          pytest user_service/tests
+          export PYTHONPATH="${{ github.workspace }}/../user_service"
+          pytest
