@@ -6,3 +6,4 @@ pydantic
 pydantic_settings
 httpx
 pytest
+python-multipart
